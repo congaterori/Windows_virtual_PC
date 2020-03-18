@@ -1,0 +1,1 @@
+CreateObject("SAPI.SpVoice").Speak"Windows virtual PC"
