@@ -1,6 +1,0 @@
-.-------------------------------------,
-|   1.search                          |
-|   2.download load page              |
-|   3.download picture web page       |
-|   4.download file                   |
-'-------------------------------------'
