@@ -17,7 +17,7 @@ if not exist C:\Winpcbatchfile\johnny\windows_PC_logo.txt copy C:\Winpcbatchfile
 if not exist C:\Winpcbatchfile\johnny\unzip.exe copy C:\Winpcbatchfile\unzip.exe C:\Winpcbatchfile\johnny\unzip.exe
 if not exist C:\Winpcbatchfile\johnny\browser.bat copy C:\Winpcbatchfile\browser.bat C:\Winpcbatchfile\johnny\browser.bat
 cd C:\Winpcbatchfile
-goto start
+::goto start
 set /A num=1
 ping localhost -n 1 > nul
 ping localhost -n 1 > nul
@@ -30,80 +30,80 @@ ping localhost -n 3 > nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°                  Û 1%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°                  Ã› 1%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°                 Û 2%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°                 Ã› 2%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°                Û 3%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°                Ã› 3%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°               Û 4%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°               Ã› 4%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°              Û 5%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°              Ã› 5%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°             Û 6%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°             Ã› 6%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°            Û 7%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°            Ã› 7%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°°           Û 8%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°Â°           Ã› 8%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°°°          Û 9%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°Â°Â°          Ã› 9%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°°°°         Û 10%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°         Ã› 10%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 start Startup_Sound.lnk
 type windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°°°°°°°°°°°°°Û 100%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Ã› 100%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 color af
 if not exist C:\Winpcbatchfile MD C:\Winpcbatchfile & MD C:\Winpcbatchfile\johnny
