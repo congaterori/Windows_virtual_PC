@@ -467,9 +467,9 @@ goto main
 :download
 cls
 echo                          .----------------------,  ,----------------------.
-echo                          |       link main      |  |       link file      |
-echo must have link EX:       |https://hello.com.vn  |  |     /robots.txt      |
-echo                          |______________________|  |______________________|
+echo                          ^|       link main      ^|  ^|       link file      ^|
+echo must have link EX:       ^|https://hello.com.vn  ^|  ^|     /robots.txt      ^|
+echo                          ^|______________________^|  ^|______________________^|
 echo                               link:https//hello.com.vn/robots.txt
 set /p linkdownload=link file need to download: 
 set /p filedownload=name file need to download: 
