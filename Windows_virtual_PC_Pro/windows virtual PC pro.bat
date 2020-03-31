@@ -33,80 +33,80 @@ cd C:\Windowspcbatchfilepro
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°                  Û 1%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°                  Ã› 1%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°                 Û 2%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°                 Ã› 2%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°                Û 3%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°                Ã› 3%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°               Û 4%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°               Ã› 4%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°              Û 5%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°              Ã› 5%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°             Û 6%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°             Ã› 6%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°            Û 7%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°            Ã› 7%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°°           Û 8%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°Â°           Ã› 8%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°°°          Û 9%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°Â°Â°          Ã› 9%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°°°°         Û 10%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°         Ã› 10%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 cls
 start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Startup_Sound.lnk
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
-echo Û°°°°°°°°°°°°°°°°°°°Û 100%%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
+echo Ã›Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Ã› 100%%
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 ping localhost -n 3 >nul
 color af
 if not exist C:\Windowspcbatchfilepro MD C:\Windowspcbatchfilepro & if not exist C:\Windowspcbatchfilepro\johnny MD C:\Windowspcbatchfilepro\johnny
@@ -472,9 +472,9 @@ goto main
 :download
 cls
 echo                          .----------------------,  ,----------------------.
-echo                          |       link main      |  |       link file      |
-echo must have link EX:       |https://hello.com.vn  |  |     /robots.txt      |
-echo                          |______________________|  |______________________|
+echo                          ^|       link main      ^|  ^|       link file      ^|
+echo must have link EX:       ^|https://hello.com.vn  ^|  ^|     /robots.txt      ^|
+echo                          ^|______________________^|  ^|______________________^|
 echo                               link:https//hello.com.vn/robots.txt
 set /p linkdownload=link file need to download: 
 set /p filedownload=name file need to download: 
