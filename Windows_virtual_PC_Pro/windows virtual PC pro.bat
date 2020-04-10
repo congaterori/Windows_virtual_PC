@@ -17,7 +17,7 @@ if exist browser.bat move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\bro
 ::if not exist C:\Windowspcbatchfilepro\johnny\windows_PC_logo.txt copy C:\Windowspcbatchfilepro\windows_PC_logo.txt C:\Windowspcbatchfilepro\johnny\windows_PC_logo.txt
 ::if not exist C:\Windowspcbatchfilepro\johnny\unzip.exe copy C:\Windowspcbatchfilepro\unzip.exe C:\Windowspcbatchfilepro\johnny\unzip.exe
 cd C:\Windowspcbatchfilepro
-::goto start
+goto start
 set /A num=1
 ping localhost -n 1 > nul
 ping localhost -n 1 > nul
@@ -126,17 +126,18 @@ if exist null del null
 color 1f
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
-cmdMenuSel f971 "Start" "Shutdown" "Login"
+cmdMenuSel f971 "Start" "Shutdown" "Login" "Update"
 if %ERRORLEVEL% == 1 goto screen
 if %ERRORLEVEL% == 2 goto exit
 if %ERRORLEVEL% == 3 goto Login_main
+if %ERRORLEVEL% == 4 goto update_main
 goto start
 :screen
 cls
 color 1f
 SETLOCAL ENABLEDELAYEDEXPANSION
 SET count=1
-FOR /F "tokens=* USEBACKQ" %%F IN (`dir /b /a-d`) DO (
+FOR /F "tokens=* USEBACKQ" %%F IN (`dir /b /a`) DO (
   SET var!count!=%%F
   SET /a count=!count!+1
 )
@@ -417,7 +418,7 @@ pause
 goto screen
 :unzip
 cls
-set /p unzip=file need to unzip: 
+::set /p unzip=file need to unzip: 
 if %id% == 1 goto unzip1
 if %id% == 2 goto unzip2
 if %id% == 3 goto unzip3
@@ -431,43 +432,43 @@ if %id% == 10 goto unzip10
 goto unzip
 :unzip1
 cls
-unzip.exe %unzip%
+unzip.exe %var1%
 goto main
 :unzip2
 cls
-unzip.exe %unzip%
+unzip.exe %var2%
 goto main
 :unzip3
 cls
-unzip.exe %unzip%
+unzip.exe %var3%
 goto main
 :unzip4
 cls
-unzip.exe %unzip%
+unzip.exe %var4%
 goto main
 :unzip5
 cls
-unzip.exe %unzip%
+unzip.exe %var5%
 goto main
 :unzip6
 cls
-unzip.exe %unzip%
+unzip.exe %var6%
 goto main
 :unzip7
 cls
-unzip.exe %unzip%
+unzip.exe %var7%
 goto main
 :unzip8
 cls
-unzip.exe %unzip%
+unzip.exe %var8%
 goto main
 :unzip9
 cls
-unzip.exe %unzip%
+unzip.exe %var9%
 goto main
 :unzip10
 cls
-unzip.exe %unzip%
+unzip.exe %var10%
 goto main
 :download
 cls
@@ -564,3 +565,68 @@ cls
 echo something wrong
 pause
 goto screen
+:update_main
+cls
+echo:---------------------------
+echo version && type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\now.txt && echo.
+echo:---------------------------
+cmdMenuSel f971 "update" "back"
+if %ERRORLEVEL% == 1 goto update
+if %ERRORLEVEL% == 2 goto start
+:update
+cls
+echo checking version ^|
+cls
+echo checking version /
+cls
+echo checking version -
+cls
+echo checking version \
+cls
+echo checking version ^|
+cls
+echo checking version /
+cls
+echo checking version -
+cls
+echo checking version \
+cls
+powershell -Command "Invoke-WebRequest https://github.com/congaterori/version/archive/master.zip -OutFile version.zip"
+echo downloading...
+timeout 10 > nul
+cls
+if not exist version.zip goto error
+unzip.exe version.zip > nul
+timeout 5 > nul
+Del version.zip
+move version-master C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\
+if not exist C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master\new.txt goto error
+fc C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master\new.txt C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\now.txt
+if %ERRORLEVEL% == 2 goto error
+if %ERRORLEVEL% == 1 goto startupdate
+if %ERRORLEVEL% == 0 goto noupdate
+:noupdate
+cls
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\now.txt
+echo.
+echo not have any update :)
+pause
+RD /S /Q "C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master"
+if exist C:\Windowspcbatchfilepro\version-master RD /S /Q version-master
+if exist C:\Windowspcbatchfilepro\johnny\version-master RD /S /Q version-master
+goto start
+:startupdate
+cls
+echo have new update!
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master\new.txt
+echo.
+echo to
+echo.
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\now.txt
+RD /S "C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master"
+pause
+cls
+echo are you sure want to update it will update file and delete old file?
+cmdMenuSel f971 "yes" "no"
+if %ERRORLEVEL% == 1 start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\update.bat
+if %ERRORLEVEL% == 2 goto update_main
