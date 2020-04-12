@@ -3,6 +3,7 @@ title Windows virtual PC
 cls
 set /A loginok=0
 color 1f
+if not exist C:\Users\%USERNAME%\Desktop echo error location must be C:\Users\%USERNAME%\Desktop && pause
 if exist cmdmenusel.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\cmdmenusel.exe C:\Winpcbatchfile
 if exist Windows_Shutdown.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Windows_Shutdown.exe C:\Winpcbatchfile & move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Windows_Shutdown.lnk
 if exist Startup_Sound.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Startup_Sound.exe C:\Winpcbatchfile & move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Startup_Sound.lnk
