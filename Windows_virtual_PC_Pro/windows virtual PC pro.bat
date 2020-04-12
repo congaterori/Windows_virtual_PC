@@ -18,13 +18,13 @@ if exist browser.bat move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\bro
 ::if not exist C:\Windowspcbatchfilepro\johnny\windows_PC_logo.txt copy C:\Windowspcbatchfilepro\windows_PC_logo.txt C:\Windowspcbatchfilepro\johnny\windows_PC_logo.txt
 ::if not exist C:\Windowspcbatchfilepro\johnny\unzip.exe copy C:\Windowspcbatchfilepro\unzip.exe C:\Windowspcbatchfilepro\johnny\unzip.exe
 cd C:\Windowspcbatchfilepro
-goto start
+::goto start
 set /A num=1
 ping localhost -n 1 > nul
 ping localhost -n 1 > nul
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo Windows Virtual PC Pro Make by johnny 2020
-start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\first2.lnk
+start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\first2.lnk
 ping localhost -n 2 > nul
 ::start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\speech.vbs
 cd C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file
@@ -102,7 +102,7 @@ echo Û°°°°°°°°°°         Û 10%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Startup_Sound.lnk
+start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Startup_Sound.lnk
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
@@ -507,7 +507,7 @@ powershell -Command "Invoke-WebRequest %linkdownload% -OutFile %filedownload%"
 goto screen
 :exit
 cls
-start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_Shutdown.lnk
+start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_Shutdown.lnk
 echo bye
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 cls
