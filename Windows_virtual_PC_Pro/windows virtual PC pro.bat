@@ -24,12 +24,12 @@ ping localhost -n 1 > nul
 ping localhost -n 1 > nul
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo Windows Virtual PC Pro Make by johnny 2020
-start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\first.lnk
+start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\first2.lnk
 ping localhost -n 2 > nul
 ::start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\speech.vbs
 cd C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file
 ping localhost -n 5 > nul
-TASKKILL /IM first.exe
+TASKKILL /IM first2.exe
 cd C:\Windowspcbatchfilepro
 cls
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
@@ -267,7 +267,7 @@ if %ERRORLEVEL% == 6 goto profile
 if %ERRORLEVEL% == 7 goto unzip
 if %ERRORLEVEL% == 8 goto download
 if %ERRORLEVEL% == 9 goto exit
-if %ERRORLEVEL% == 10 goto start
+if %ERRORLEVEL% == 10 goto screen
 goto main
 :open
 if %id% == 1 echo.
