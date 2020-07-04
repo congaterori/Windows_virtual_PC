@@ -143,7 +143,7 @@ FOR /F "tokens=* USEBACKQ" %%F IN (`dir /b /a`) DO (
   SET /a count=!count!+1
 )
 echo +=====================================================================+
-cmdMenuSel f971 "%var1%" "%var2%" "%var3%" "%var4%" "%var5%" "%var6%" "%var7%" "%var8%" "%var9%" "%var10%"
+cmdMenuSel f971 "%var1%" "%var2%" "%var3%" "%var4%" "%var5%" "%var6%" "%var7%" "%var8%" "%var9%" "%var10%" "back"
 echo +=====================================================================+
 if %ERRORLEVEL% == 1 goto var1to
 if %ERRORLEVEL% == 2 goto var2to
@@ -155,6 +155,7 @@ if %ERRORLEVEL% == 7 goto var7to
 if %ERRORLEVEL% == 8 goto var8to
 if %ERRORLEVEL% == 9 goto var9to
 if %ERRORLEVEL% == 10 goto var10to
+if %ERRORLEVEL% == 11 goto backtomenu
 goto screen
 :var1to
 set /A id=1
@@ -186,6 +187,8 @@ goto main
 :var10to
 set /A id=10
 goto main
+:backtomenu
+goto start
 :Login_main
 cls
 cmdMenuSel f971 "Login" "Registration" "back"
