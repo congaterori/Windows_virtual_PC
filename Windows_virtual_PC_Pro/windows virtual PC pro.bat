@@ -5,7 +5,7 @@ set /A loginok=0
 color 1f
 if not exist C:\Users\%USERNAME%\Desktop echo error location must be C:\Users\%USERNAME%\Desktop && pause
 if exist C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\cmdmenusel.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\cmdmenusel.exe C:\Windowspcbatchfilepro & if exist c:\Windowspcbatchfilepro\cmdmenusel.exe copy C:\Windowspcbatchfilepro\cmdmenusel.exe C:\Windowspcbatchfilepro\johnny\cmdmenusel.exe
-::if exist Windows_Shutdown.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\Windows_Shutdown.exe C:\Windowspcbatchfilepro & move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Windows_Shutdown.lnk
+::if exist Windows_Shutdown.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\Windows_Shutdown.exe C:\Windowspcbatchfilepro & move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Windows_Shutdown.exe
 ::if exist Startup_Sound.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\Startup_Sound.exe C:\Windowspcbatchfilepro & move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Startup_Sound.lnk
 ::if exist windows_PC_logo.txt move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\windows_PC_logo.txt C:\Windowspcbatchfilepro
 ::if exist password.txt move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\password.txt C:\Windowspcbatchfilepro
@@ -13,8 +13,8 @@ if exist C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\unzip.exe move 
 if exist time.bat move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\time.bat C:\Windowspcbatchfilepro\johnny
 if exist browser.bat move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\browser.bat C:\Windowspcbatchfilepro\johnny
 ::if not exist C:\Windowspcbatchfilepro\johnny\cmdmenusel.exe copy C:\Windowspcbatchfilepro\cmdmenusel.exe C:\Windowspcbatchfilepro\johnny\cmdmenusel.exe
-::if not exist C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe copy C:\Windowspcbatchfilepro\Windows_Shutdown.exe C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe & if not exist C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.lnk copy C:\Windowspcbatchfilepro\Windows_Shutdown.lnk C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.lnk
-::if not exist C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe copy C:\Windowspcbatchfilepro\Startup_Sound.exe C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe & if not exist C:\Windowspcbatchfilepro\johnny\Startup_Sound.lnk copy C:\Windowspcbatchfilepro\Startup_Sound.lnk C:\Windowspcbatchfilepro\johnny\Startup_Sound.lnk
+::if not exist C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe copy C:\Windowspcbatchfilepro\Windows_Shutdown.exe C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe & if not exist C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe copy C:\Windowspcbatchfilepro\Windows_Shutdown.exe C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe
+::if not exist C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe copy C:\Windowspcbatchfilepro\Startup_Sound.exe C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe & if not exist C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe copy C:\Windowspcbatchfilepro\Startup_Sound.exe C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe
 ::if not exist C:\Windowspcbatchfilepro\johnny\windows_PC_logo.txt copy C:\Windowspcbatchfilepro\windows_PC_logo.txt C:\Windowspcbatchfilepro\johnny\windows_PC_logo.txt
 ::if not exist C:\Windowspcbatchfilepro\johnny\unzip.exe copy C:\Windowspcbatchfilepro\unzip.exe C:\Windowspcbatchfilepro\johnny\unzip.exe
 cd C:\Windowspcbatchfilepro
@@ -24,7 +24,7 @@ ping localhost -n 1 > nul
 ping localhost -n 1 > nul
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo Windows Virtual PC Pro Make by johnny 2020
-start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\first2.lnk
+start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\first2.exe
 ping localhost -n 2 > nul
 ::start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\speech.vbs
 cd C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file
@@ -102,7 +102,7 @@ echo Û°°°°°°°°°°         Û 10%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Startup_Sound.lnk
+start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Startup_Sound.exe
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
@@ -507,7 +507,7 @@ powershell -Command "Invoke-WebRequest %linkdownload% -OutFile %filedownload%"
 goto screen
 :exit
 cls
-start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_Shutdown.lnk
+start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_Shutdown.exe
 echo bye
 type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 cls
