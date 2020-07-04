@@ -13,7 +13,7 @@ title %date% %h%:%m% %ap%M
 mode 40,05
 echo: .-------------------------------,
 ::        Sun 05/17/2015-23:21:03.34
-echo: ^|%date%                     ^|
+echo: ^|%date%                 ^|
 echo: ^|%time%                    ^|
 echo: '_______________________________"
 timeout 0 > nul
