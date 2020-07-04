@@ -1,1 +1,2 @@
+Run setup first
 Run batch file on desktop windows 10
