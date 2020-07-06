@@ -1,141 +1,149 @@
+@echo off
+title Windows virtual PC
 cls
 set /A loginok=0
 color 1f
 if not exist C:\Users\%USERNAME%\Desktop echo error location must be C:\Users\%USERNAME%\Desktop && pause
-if exist cmdmenusel.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\cmdmenusel.exe C:\Winpcbatchfile
-if exist Windows_Shutdown.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Windows_Shutdown.exe C:\Winpcbatchfile & move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Windows_Shutdown.lnk
-if exist Startup_Sound.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Startup_Sound.exe C:\Winpcbatchfile & move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Startup_Sound.lnk
-if exist windows_PC_logo.txt move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\windows_PC_logo.txt C:\Winpcbatchfile
-if exist password.txt move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\password.txt C:\Winpcbatchfile
-if exist unzip.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\unzip.exe C:\Winpcbatchfile
-if exist browser.bat move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\browser.bat C:\Winpcbatchfile
-if not exist C:\Winpcbatchfile\johnny\cmdmenusel.exe copy C:\Winpcbatchfile\cmdmenusel.exe C:\Winpcbatchfile\johnny\cmdmenusel.exe
-if not exist C:\Winpcbatchfile\johnny\Windows_Shutdown.exe copy C:\Winpcbatchfile\Windows_Shutdown.exe C:\Winpcbatchfile\johnny\Windows_Shutdown.exe & if not exist C:\Winpcbatchfile\johnny\Windows_Shutdown.lnk copy C:\Winpcbatchfile\Windows_Shutdown.lnk C:\Winpcbatchfile\johnny\Windows_Shutdown.lnk
-if not exist C:\Winpcbatchfile\johnny\Startup_Sound.exe copy C:\Winpcbatchfile\Startup_Sound.exe C:\Winpcbatchfile\johnny\Startup_Sound.exe & if not exist C:\Winpcbatchfile\johnny\Startup_Sound.lnk copy C:\Winpcbatchfile\Startup_Sound.lnk C:\Winpcbatchfile\johnny\Startup_Sound.lnk
-if not exist C:\Winpcbatchfile\johnny\windows_PC_logo.txt copy C:\Winpcbatchfile\windows_PC_logo.txt C:\Winpcbatchfile\johnny\windows_PC_logo.txt
-if not exist C:\Winpcbatchfile\johnny\unzip.exe copy C:\Winpcbatchfile\unzip.exe C:\Winpcbatchfile\johnny\unzip.exe
-if not exist C:\Winpcbatchfile\johnny\browser.bat copy C:\Winpcbatchfile\browser.bat C:\Winpcbatchfile\johnny\browser.bat
-cd C:\Winpcbatchfile
+if exist C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\cmdmenusel.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\cmdmenusel.exe C:\Windowspcbatchfilepro & if exist c:\Windowspcbatchfilepro\cmdmenusel.exe copy C:\Windowspcbatchfilepro\cmdmenusel.exe C:\Windowspcbatchfilepro\johnny\cmdmenusel.exe
+::if exist Windows_Shutdown.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\Windows_Shutdown.exe C:\Windowspcbatchfilepro & move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Windows_Shutdown.exe
+::if exist Startup_Sound.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\Startup_Sound.exe C:\Windowspcbatchfilepro & move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\Startup_Sound.lnk
+::if exist windows_PC_logo.txt move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\windows_PC_logo.txt C:\Windowspcbatchfilepro
+::if exist password.txt move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\password.txt C:\Windowspcbatchfilepro
+if exist C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\unzip.exe move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\unzip.exe C:\Windowspcbatchfilepro & if exist c:\Windowspcbatchfilepro\unzip.exe copy C:\Windowspcbatchfilepro\unzip.exe C:\Windowspcbatchfilepro\johnny\unzip.exe
+if exist time.bat move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\time.bat C:\Windowspcbatchfilepro\johnny
+if exist browser.bat move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\browser.bat C:\Windowspcbatchfilepro\johnny
+::if not exist C:\Windowspcbatchfilepro\johnny\cmdmenusel.exe copy C:\Windowspcbatchfilepro\cmdmenusel.exe C:\Windowspcbatchfilepro\johnny\cmdmenusel.exe
+::if not exist C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe copy C:\Windowspcbatchfilepro\Windows_Shutdown.exe C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe & if not exist C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe copy C:\Windowspcbatchfilepro\Windows_Shutdown.exe C:\Windowspcbatchfilepro\johnny\Windows_Shutdown.exe
+::if not exist C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe copy C:\Windowspcbatchfilepro\Startup_Sound.exe C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe & if not exist C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe copy C:\Windowspcbatchfilepro\Startup_Sound.exe C:\Windowspcbatchfilepro\johnny\Startup_Sound.exe
+::if not exist C:\Windowspcbatchfilepro\johnny\windows_PC_logo.txt copy C:\Windowspcbatchfilepro\windows_PC_logo.txt C:\Windowspcbatchfilepro\johnny\windows_PC_logo.txt
+::if not exist C:\Windowspcbatchfilepro\johnny\unzip.exe copy C:\Windowspcbatchfilepro\unzip.exe C:\Windowspcbatchfilepro\johnny\unzip.exe
+cd C:\Windowspcbatchfilepro
 ::goto start
 set /A num=1
 ping localhost -n 1 > nul
 ping localhost -n 1 > nul
-type C:\Winpcbatchfile\windows_PC_logo.txt
-echo Make by johnny 2020
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
+echo Windows Virtual PC Pro Make by johnny 2020
+start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\first2.exe
 ping localhost -n 2 > nul
-::start C:\Users\%Username%\Desktop\Windows_virtual_PC\speech.vbs
-start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC\first.mp3
-ping localhost -n 3 > nul
+::start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\speech.vbs
+cd C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file
+ping localhost -n 5 > nul
+TASKKILL /IM first2.exe
+cd C:\Windowspcbatchfilepro
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°                  Û 1%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°                 Û 2%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°°                Û 3%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°°°               Û 4%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°°°°              Û 5%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°°°°°             Û 6%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°°°°°°            Û 7%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°°°°°°°           Û 8%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°°°°°°°°          Û 9%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-type windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°°°°°°°°°         Û 10%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 cls
-start Startup_Sound.lnk
-type windows_PC_logo.txt
+start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Startup_Sound.exe
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\windows_PC_logo.txt
 echo.
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 echo Û°°°°°°°°°°°°°°°°°°°Û 100%%
 echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
 ping localhost -n 3 >nul
 color af
-if not exist C:\Winpcbatchfile MD C:\Winpcbatchfile & MD C:\Winpcbatchfile\johnny
+if not exist C:\Windowspcbatchfilepro MD C:\Windowspcbatchfilepro & if not exist C:\Windowspcbatchfilepro\johnny MD C:\Windowspcbatchfilepro\johnny
 echo loading...
 timeout 10 > nul
+cd C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file
 TASKKILL /IM Startup_Sound.exe
 pause
 goto start
 :start
 cls
-if %loginok% == 1 cd C:\Winpcbatchfile\johnny
+cd C:\Windowspcbatchfilepro
+if %loginok% == 1 cd C:\Windowspcbatchfilepro\johnny
 if not %loginok% == 1 echo you not login
 ::echo %loginok%
 if exist null del null
 color 1f
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
-cmdMenuSel f971 "Start" "Shutdown" "Login"
+cmdMenuSel f971 "Start" "Shutdown" "Login" "Update"
 if %ERRORLEVEL% == 1 goto screen
 if %ERRORLEVEL% == 2 goto exit
 if %ERRORLEVEL% == 3 goto Login_main
+if %ERRORLEVEL% == 4 goto update_main
 goto start
 :screen
 cls
 color 1f
 SETLOCAL ENABLEDELAYEDEXPANSION
 SET count=1
-FOR /F "tokens=* USEBACKQ" %%F IN (`dir /b /a-d`) DO (
+FOR /F "tokens=* USEBACKQ" %%F IN (`dir /b /a`) DO (
   SET var!count!=%%F
   SET /a count=!count!+1
 )
 echo +=====================================================================+
-cmdMenuSel f971 "%var1%" "%var2%" "%var3%" "%var4%" "%var5%" "%var6%" "%var7%" "%var8%" "%var9%" "%var10%"
+cmdMenuSel f971 "%var1%" "%var2%" "%var3%" "%var4%" "%var5%" "%var6%" "%var7%" "%var8%" "%var9%" "%var10%" "back"
 echo +=====================================================================+
 if %ERRORLEVEL% == 1 goto var1to
 if %ERRORLEVEL% == 2 goto var2to
@@ -147,6 +155,7 @@ if %ERRORLEVEL% == 7 goto var7to
 if %ERRORLEVEL% == 8 goto var8to
 if %ERRORLEVEL% == 9 goto var9to
 if %ERRORLEVEL% == 10 goto var10to
+if %ERRORLEVEL% == 11 goto backtomenu
 goto screen
 :var1to
 set /A id=1
@@ -178,6 +187,8 @@ goto main
 :var10to
 set /A id=10
 goto main
+:backtomenu
+goto start
 :Login_main
 cls
 cmdMenuSel f971 "Login" "Registration" "back"
@@ -194,11 +205,13 @@ echo.
 echo Login
 setlocal DisableDelayedExpansion
 set /p input=Username:
+
 set "psCommand=powershell -Command "$pword = read-host 'Enter password' -AsSecureString ; ^
     $BSTR=[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($pword); ^
       [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)""
         for /f "usebackq delims=" %%p in (`%psCommand%`) do set passwords=%%p
 )
+
 for /f "Delims=" %%a in (password.txt) do set pass=%%a
 if %passwords% == %pass% goto sucess
 if not %passwords% == %pass% goto invalid
@@ -210,7 +223,7 @@ echo welcom back %Username%!
 set /A loginok=1
 echo :)
 pause
-cd C:\Winpcbatchfile\johnny
+cd C:\Windowspcbatchfilepro\johnny
 goto start
 :invalid
 cls
@@ -223,7 +236,7 @@ cls
 echo create your account
 set /p newusername=username: 
 set /p newpassword=password: 
-echo %newpassword% > C:\Winpcbatchfile\password.txt
+echo %newpassword% > C:\Windowspcbatchfilepro\password.txt
 cls
 echo done!
 pause
@@ -231,7 +244,7 @@ goto start
 :main
 cls
 color 1f
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
 ::echo 1.Open
 ::echo 2.create
@@ -246,7 +259,7 @@ cls
 echo %id%
 echo.
 :: "Type" 
-cmdMenuSel f971 "Open" "Create" "Delete" "rename" "Move" "Profile" "unzip" "download" "Shutdown" "no"
+cmdMenuSel f971 "Open" "Create" "Delete" "rename" "Move" "Profile" "unzip" "download" "Shutdown" "back"
 if %ERRORLEVEL% == 1 goto open
 if %ERRORLEVEL% == 2 goto create
 ::if %EERORLEVEL% == 3 goto type
@@ -257,7 +270,7 @@ if %ERRORLEVEL% == 6 goto profile
 if %ERRORLEVEL% == 7 goto unzip
 if %ERRORLEVEL% == 8 goto download
 if %ERRORLEVEL% == 9 goto exit
-if %ERRORLEVEL% == 10 goto start
+if %ERRORLEVEL% == 10 goto screen
 goto main
 :open
 if %id% == 1 echo.
@@ -332,7 +345,7 @@ echo %writefile% >> %filename%
 echo.
 type %filename%
 echo.
-tree C:\Winpcbatchfile /F
+tree C:\Windowspcbatchfilepro /F
 echo.
 cls
 goto create
@@ -341,7 +354,7 @@ cls
 set /p foldername=folder name: 
 md %foldername%
 echo.
-tree C:\Winpcbatchfile /F
+tree C:\Windowspcbatchfilepro /F
 echo.
 goto create
 ::type
@@ -372,7 +385,7 @@ cls
 set /p delfilename=file name: 
 del %delfilename%
 echo.
-tree C:\Winpcbatchfile /F
+tree C:\Windowspcbatchfilepro /F
 echo.
 goto delete
 :delfolder
@@ -380,7 +393,7 @@ cls
 set /p delfoldername=folder name: 
 rmdir %delfoldername%
 echo.
-tree C:\Winpcbatchfile /F
+tree C:\Windowspcbatchfilepro /F
 echo.
 goto delete
 :rename
@@ -389,7 +402,7 @@ set /p renamename=name file or folder need to rename:
 set /p wantrename=name you want to rename: 
 ren %namerename% %wantrename%
 echo.
-tree C:\Winpcbatchfile /F
+tree C:\Windowspcbatchfilepro /F
 pause
 goto screen
 :move
@@ -397,19 +410,19 @@ set /p movename=name file or folder need to move:
 set /p wantmove=where do you want to move: 
 move %movename% %wantmove%
 echo.
-tree C:\Winpcbatchfile /F
+tree C:\Windowspcbatchfilepro /F
 pause
 goto screen
 :profile
 set /p profilename=name file or folder need profile: 
 dir %profile%
 echo.
-tree C:\Winpcbatchfile /F
+tree C:\Windowspcbatchfilepro /F
 pause
 goto screen
 :unzip
 cls
-set /p unzip=file need to unzip: 
+::set /p unzip=file need to unzip: 
 if %id% == 1 goto unzip1
 if %id% == 2 goto unzip2
 if %id% == 3 goto unzip3
@@ -423,43 +436,43 @@ if %id% == 10 goto unzip10
 goto unzip
 :unzip1
 cls
-unzip.exe %unzip%
+unzip.exe %var1%
 goto main
 :unzip2
 cls
-unzip.exe %unzip%
+unzip.exe %var2%
 goto main
 :unzip3
 cls
-unzip.exe %unzip%
+unzip.exe %var3%
 goto main
 :unzip4
 cls
-unzip.exe %unzip%
+unzip.exe %var4%
 goto main
 :unzip5
 cls
-unzip.exe %unzip%
+unzip.exe %var5%
 goto main
 :unzip6
 cls
-unzip.exe %unzip%
+unzip.exe %var6%
 goto main
 :unzip7
 cls
-unzip.exe %unzip%
+unzip.exe %var7%
 goto main
 :unzip8
 cls
-unzip.exe %unzip%
+unzip.exe %var8%
 goto main
 :unzip9
 cls
-unzip.exe %unzip%
+unzip.exe %var9%
 goto main
 :unzip10
 cls
-unzip.exe %unzip%
+unzip.exe %var10%
 goto main
 :download
 cls
@@ -497,48 +510,48 @@ powershell -Command "Invoke-WebRequest %linkdownload% -OutFile %filedownload%"
 goto screen
 :exit
 cls
-start Windows_Shutdown.lnk
+start /min C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_Shutdown.exe
 echo bye
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 cls
 echo bye
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
 echo Shutting down:^|
 timeout 1 > null
 cls
 echo bye
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
 echo Shutting down:\
 timeout 1 > null
 cls
 echo bye
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
 echo Shutting down:-
 timeout 1 > null
 cls
 echo bye
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
 echo Shutting down:/
 timeout 1 > null
 cls
 echo bye
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
 echo Shutting down:^|
 timeout 1 > null
 cls
 echo bye
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
 echo Shutting down:\
 timeout 1 > null
 cls
 echo bye
-type Windows_PC_logo.txt
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\Windows_PC_logo.txt
 echo.
 echo Shutting down:-
 timeout 1 > null
@@ -546,7 +559,9 @@ cls
 echo Shutting down:/
 timeout 1 > null
 cls
+cd C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file
 TASKKILL /IM Windows_Shutdown.exe
+cd C:\Windowspcbatchfilepro
 END LOCAL
 exit
 :error
@@ -554,3 +569,68 @@ cls
 echo something wrong
 pause
 goto screen
+:update_main
+cls
+echo:---------------------------
+echo version && type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\now.txt && echo.
+echo:---------------------------
+cmdMenuSel f971 "update" "back"
+if %ERRORLEVEL% == 1 goto update
+if %ERRORLEVEL% == 2 goto start
+:update
+cls
+echo checking version ^|
+cls
+echo checking version /
+cls
+echo checking version -
+cls
+echo checking version \
+cls
+echo checking version ^|
+cls
+echo checking version /
+cls
+echo checking version -
+cls
+echo checking version \
+cls
+powershell -Command "Invoke-WebRequest https://github.com/congaterori/version/archive/master.zip -OutFile version.zip"
+echo downloading...
+timeout 10 > nul
+cls
+if not exist version.zip goto error
+unzip.exe version.zip > nul
+timeout 5 > nul
+Del version.zip
+move version-master C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\
+if not exist C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master\new.txt goto error
+fc C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master\new.txt C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\now.txt
+if %ERRORLEVEL% == 2 goto error
+if %ERRORLEVEL% == 1 goto startupdate
+if %ERRORLEVEL% == 0 goto noupdate
+:noupdate
+cls
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\now.txt
+echo.
+echo not have any update :)
+pause
+RD /S /Q "C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master"
+if exist C:\Windowspcbatchfilepro\version-master RD /S /Q version-master
+if exist C:\Windowspcbatchfilepro\johnny\version-master RD /S /Q version-master
+goto start
+:startupdate
+cls
+echo have new update!
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master\new.txt
+echo.
+echo to
+echo.
+type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\now.txt
+RD /S "C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\version-master"
+pause
+cls
+echo are you sure want to update it will update file and delete old file?
+cmdMenuSel f971 "yes" "no"
+if %ERRORLEVEL% == 1 start C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\update.bat
+if %ERRORLEVEL% == 2 goto update_main
