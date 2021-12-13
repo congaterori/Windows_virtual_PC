@@ -595,7 +595,7 @@ echo checking version -
 cls
 echo checking version \
 cls
-powershell -Command "Invoke-WebRequest https://github.com/congaterori/version/archive/master.zip -OutFile version.zip"
+wget https://github.com/congaterori/version/archive/master.zip -OutFile version.zip
 echo downloading...
 timeout 10 > nul
 cls
