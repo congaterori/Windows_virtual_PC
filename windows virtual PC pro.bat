@@ -485,7 +485,7 @@ setlocal
 for /f "tokens=4-5 delims=. " %%i in ('ver') do set VERSION=%%i.%%j
 if "%version%" == "6.1" goto windows7
 if "%version%" == "10.0" goto windows10
-goto downloadpowershell
+goto windows10
 :windows7
 cls
 powershell -Command "(New-Object Net.WebClient).DownloadFile('%linkdownload%', '%filedownload%')"
