@@ -7,6 +7,7 @@ setlocal
 for /f "tokens=4-5 delims=. " %%i in ('ver') do set VERSION=%%i.%%j
 if "%version%" == "6.1" goto win7
 if "%version%" == "10.0" goto win10
+goto win10
 :win7
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/congaterori/Windows_virtual_PC/archive/pro.zip', 'Windows_virtual_pc.zip')"
 goto start
