@@ -335,10 +335,6 @@ echo.
 goto create
 :delete
 cls
-::cmdMenuSel f971 "file" "folder" "exit"
-::if %ERRORLEVEL% == 1 goto delfile
-::if %ERRORLEVEL% == 2 goto delfolder
-::if %ERRORLEVEL% == 3 goto screen
 if %id% == 1 set filefoldername=%var1%
 if %id% == 2 set filefoldername=%var2%
 if %id% == 3 set filefoldername=%var3%
