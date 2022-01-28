@@ -19,5 +19,5 @@ goto loop
 cls
 echo y | rmdir /S C:\Windowspc > nul
 echo y | rmdir /S C:\Windowspcbatchfilepro > nul
-start /min cmd /k "cd.. & echo y | rmdir /S Windows_virtual_PC-demo-pro & exit"
+start /min cmd /k "cd.. & echo y | rmdir /S Windows_virtual_PC-pro & exit"
 exit
